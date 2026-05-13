@@ -141,6 +141,155 @@ body {
   color: #ccc;
 }
 
+/* =========================
+   Search bar (PARANOIA)
+   ========================= */
+
+/* Variables locales */
+:root{
+  --search-bg:#2f2f2f;
+  --search-border:rgba(225,255,0,0.12);
+  --accent:#ff4444;
+  --accent-2:#6346e5;
+  --text:#e6eefc;
+  --muted:#bfc8d6;
+  --radius:999px;
+  --shadow:0 8px 30px rgba(2,6,23,0.6);
+}
+
+/* Contenedor principal (mantiene layout flex de navbar) */
+.search-bar{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  width:340px;
+  max-width:40vw;
+  min-width:180px;
+  padding:6px;
+  border-radius:var(--radius);
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.18));
+  border:2px solid var(--search-border);
+  box-shadow:0 6px 18px rgba(0,0,0,0.45);
+  box-sizing:border-box;
+  transition:box-shadow .22s ease, transform .12s ease, border-color .18s ease;
+}
+
+/* Input: ocupa el espacio disponible */
+.search-bar input[type="search"],
+.search-bar input[type="text"]{
+  -webkit-appearance:none;
+  appearance:none;
+  flex:1 1 auto;
+  min-width:0;
+  padding:10px 14px;
+  font-size:15px;
+  color:var(--text);
+  background:transparent;
+  border:0;
+  border-radius:8px;
+  outline:none;
+  caret-color:var(--accent-2);
+  transition:width .12s ease;
+}
+
+/* Placeholder */
+.search-bar input::placeholder{
+  color:var(--muted);
+  opacity:0.95;
+}
+
+/* Botón: círculo compacto con feedback */
+.search-bar button{
+  flex:0 0 auto;
+  width:44px;
+  height:44px;
+  display:inline-grid;
+  place-items:center;
+  border-radius:10px;
+  border:0;
+  background:linear-gradient(180deg, rgba(99,102,241,0.12), rgba(99,102,241,0.04));
+  color:var(--accent-2);
+  font-size:18px;
+  cursor:pointer;
+  transition:transform .12s ease, box-shadow .18s ease, background .18s ease;
+  box-shadow:0 2px 8px rgb(255, 221, 0);
+}
+
+/* Hover / active del botón */
+.search-bar button:hover{ transform:translateY(-2px); box-shadow:0 10px 28px rgba(99,102,241,0.08); }
+.search-bar button:active{ transform:translateY(0); }
+
+/* Focus visible (teclado) */
+.search-bar :focus-visible{
+  outline:3px solid rgba(167, 201, 0, 0.14);
+  outline-offset:3px;
+  border-radius:8px;
+}
+
+/* Cuando el input está enfocado, resalta el contenedor */
+.search-bar input:focus ~ button,
+.search-bar input:focus,
+.search-bar:focus-within{
+  box-shadow:0 12px 40px rgba(0, 0, 0, 0.08);
+  border-color:rgb(255, 230, 0);
+  transform:translateY(-1px);
+}
+
+/* Sugerencias (autocompletado) - opcional en tu HTML */
+.search-bar + .suggestions,
+.search-bar .suggestions{
+  position:absolute;
+  margin-top:10px;
+  left:12px;
+  right:auto;
+  width:calc(340px - 24px);
+  max-width:40vw;
+  background:#111;
+  border:1px solid rgba(255,255,255,0.04);
+  border-radius:10px;
+  box-shadow:var(--shadow);
+  list-style:none;
+  padding:6px 0;
+  z-index:60;
+  max-height:260px;
+  overflow:auto;
+}
+
+/* Ajusta si colocas la lista dentro del header con posicionamiento relativo */
+header{ position:relative; }
+
+/* Item de sugerencia */
+.suggestions .suggestion-item{
+  padding:10px 14px;
+  font-size:14px;
+  color:var(--text);
+  cursor:pointer;
+}
+.suggestions .suggestion-item[aria-selected="true"],
+.suggestions .suggestion-item:hover{
+  background:rgba(99,102,241,0.08);
+  color:var(--accent-2);
+}
+
+/* Modo oscuro / alternativo (ya tu sitio es oscuro; ajustes finos) */
+.dark .search-bar,
+body{ /* si usas clase .dark en body */ }
+.search-bar{ background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.28)); }
+
+/* Responsive: adapta ancho en pantallas pequeñas */
+@media (max-width: 900px){
+  .search-bar{ max-width:320px; width:48vw; }
+  .search-bar + .suggestions,
+  .search-bar .suggestions{ width:calc(48vw - 24px); }
+}
+@media (max-width: 600px){
+  .search-bar{ width:100%; max-width:100%; margin-top:8px; padding:6px; }
+  .search-bar input{ padding:10px 12px; font-size:15px; }
+  .search-bar button{ width:40px; height:40px; font-size:16px; }
+  .search-bar + .suggestions,
+  .search-bar .suggestions{ left:8px; width:calc(100% - 16px); }
+}
+
 
 @media (max-width: 600px) {
   .navbar {
