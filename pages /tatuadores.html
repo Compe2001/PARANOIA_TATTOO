@@ -1,85 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Tatuadores — Paranoia Tattoo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tatuadores - PARANOIA</title>
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="../css/artist.css">
+  <link rel="stylesheet" href="../css/artistGallery.css">
 </head>
-<body class="dark">
-<header>
-  <nav class="navbar">
-    <img class="logo" src="../public/img/PARANOIA.png" alt="Paranoia Logo">
-    <ul class="nav-links">
-      <li><a href="#tatuadores">Tatuadores</a></li>
-      <li><a href="#supplies">Supplies</a></li>
-      <li><a href="#citas">Agendar</a></li>
-      <li><a href="#merch">Merch</a></li>
-    </ul>
-    <div class="search-bar">
-      <input type="text" placeholder="Buscar...">
-      <button>🔍</button>
-    </div>
-  </nav>
-</header>
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <img src="../public/img/PARANOIA.png" alt="Paranoia Tattoo Logo" class="preloader-logo">
+    <p>Cargando...</p>
+  </div>
 
+  <!-- Header/Nav -->
+  <header>
+    <nav class="navbar">
+      <img class="logo" src="../public/img/PARANOIA.png" alt="Paranoia Logo">
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./tatuadores.html" class="active">Tatuadores</a></li>
+        <li><a href="./supplies.html">Supplies</a></li>
+        <li><a href="./agenda.html">Agendar</a></li>
+        <li><a href="./merch.html">Merch</a></li>
+      </ul>
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar artistas..." id="global-search">
+        <button>🔍</button>
+      </div>
+    </nav>
+  </header>
 
+  <!-- Hero Section -->
+  <section class="artists-hero">
+    <h1> Nuestros Artistas</h1>
+    <p>Maestros del arte corporal en Guadalajara</p>
+  </section>
 
+  <!-- Contenido Principal -->
   <main class="artists-page">
-    <section class="controls">
-      <div class="filters" role="region" aria-label="Filtros de estilos">
-        <label for="style-filter" class="visually-hidden">Filtrar por estilo</label>
-        <select id="style-filter" aria-label="Filtrar por estilo">
+    <!-- Controles de filtro -->
+    <div class="artist-controls">
+      <div class="filter-group">
+        <label for="style-filter">Filtrar por estilo:</label>
+        <select id="style-filter" class="filter-select">
           <option value="">Todos los estilos</option>
           <option value="realismo">Realismo</option>
-          <option value="tradicional">Tradicional</option>
-          <option value="neo-tradicional">Neo Tradicional</option>
           <option value="blackwork">Blackwork</option>
-          <option value="japanese">Japanese</option>
+          <option value="japones">Japonés</option>
+          <option value="geometrico">Geométrico</option>
+          <option value="old school">Old School</option>
+          <option value="color">Color</option>
+          <option value="neo tradicional">Neo Tradicional</option>
+          <option value="portrait">Portrait</option>
+          <option value="linework">Linework</option>
+          <option value="dotwork">Dotwork</option>
           <option value="minimal">Minimal</option>
+          <option value="new school">New School</option>
+          <option value="irezumi">Irezumi</option>
         </select>
       </div>
 
-      <div class="sort" role="region" aria-label="Ordenar">
-        <label for="sort-by" class="visually-hidden">Ordenar</label>
-        <select id="sort-by" aria-label="Ordenar artistas">
-          <option value="featured">Destacados</option>
-          <option value="name-asc">Nombre A–Z</option>
-          <option value="name-desc">Nombre Z–A</option>
+      <div class="filter-group">
+        <label for="experience-filter">Experiencia:</label>
+        <select id="experience-filter" class="filter-select">
+          <option value="">Todos</option>
+          <option value="5">5+ años</option>
+          <option value="10">10+ años</option>
+          <option value="15">15+ años</option>
         </select>
       </div>
-    </section>
 
-    <section id="gallery" class="gallery" aria-live="polite">
-      <!-- Tarjetas generadas por JS o estáticas -->
-      <!-- Ejemplo de tarjeta -->
-      <article class="card" data-name="Luna Rivera" data-style="realismo" data-city="Guadalajara">
-        <a class="card-link" href="tatuadores/luna-rivera.html" aria-label="Ver ficha de Luna Rivera">
-          <div class="card-media">
-            <img src="artists/luna-thumb.jpg" alt="Trabajo de Luna Rivera mostrando realismo en retrato">
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">Luna Rivera</h3>
-            <p class="card-meta">Realismo · Guadalajara</p>
-          </div>
-        </a>
-      </article>
+      <div class="filter-group" style="flex: 1; min-width: 200px;">
+        <input type="text" id="artist-search" class="artist-search" placeholder="Buscar por nombre o estilo...">
+      </div>
+    </div>
 
-      <!-- Repite tarjetas o genera con JS -->
-    </section>
+    <!-- Galería de artistas -->
+    <div class="artists-gallery" id="artists-gallery">
+      <!-- Cargado dinámicamente por JavaScript -->
+    </div>
 
-    <nav class="pagination" aria-label="Paginación de artistas">
-      <button class="page-btn" data-page="prev" aria-label="Página anterior" disabled>‹</button>
-      <div class="page-numbers" aria-hidden="true">1 / 4</div>
-      <button class="page-btn" data-page="next" aria-label="Página siguiente">›</button>
-    </nav>
+    <!-- Mensaje sin resultados -->
+    <div class="no-results" id="no-results" style="display: none;">
+      <p>😢 No encontramos artistas con esos criterios</p>
+      <p style="font-size: 0.95rem; color: #999;">Intenta con otros filtros o estilos</p>
+    </div>
   </main>
 
-  <footer class="site-footer">
-    <p>© Paranoia Tattoo — Guadalajara</p>
+  <!-- Footer -->
+  <footer style="background: #000; padding: 30px 20px; text-align: center; color: #666; margin-top: 60px; border-top: 1px solid #333;">
+    <p>&copy; 2024 PARANOIA Tattoo Studio. Todos los derechos reservados.</p>
   </footer>
 
-  <script src="../js/artist.js"></script>
+  <!-- Scripts -->
+  <script src="../js/preloader.js"></script>
+  <script src="../js/artists.js"></script>
 </body>
 </html>
