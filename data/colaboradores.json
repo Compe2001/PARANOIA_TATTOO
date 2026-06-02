@@ -8,49 +8,49 @@
       "bio": "Especialista en realismo detallado con 10 años de experiencia",
       "estilos": ["realismo", "blackwork", "japones", "geometrico"],
       "ubicacion": "Guadalajara, Jalisco",
-      "imagen": "../public/img/spiker.webp",
+      "imagen": "../public/img/tatuadores/spiker.webp",
       "redes": {
         "instagram": "https://instagram.com/spiker_tattoo",
         "whatsapp": "+5213312345678"
       }
     },
     {
-      "id": "maria-luna",
-      "name": "María",
-      "artistName": "Luna",
+      "id": "Chino",
+      "name": "El Chino",
+      "artistName": "PARCKETECK",
       "experienceYears": 8,
       "bio": "Artista de tatuajes con enfoque en old school y color vibrante",
       "estilos": ["old school", "color", "neo tradicional", "portrait"],
       "ubicacion": "Guadalajara, Jalisco",
-      "imagen": "./public/img/artist-maria.jpg",
+      "imagen": "../public/img/tatuadores/perckateck.jpg",
       "redes": {
         "instagram": "https://instagram.com/luna_tattoo_art",
         "whatsapp": "+5213312345679"
       }
     },
     {
-      "id": "carlos-black",
-      "name": "Carlos",
-      "artistName": "Black",
-      "experienceYears": 12,
+      "id": "Comper",
+      "name": "Casiel",
+      "artistName": "Compendium",
+      "experienceYears": 5,
       "bio": "Maestro en linework y blackwork minimalista",
       "estilos": ["blackwork", "linework", "minimal", "geometrico"],
       "ubicacion": "Guadalajara, Jalisco",
-      "imagen": "./public/img/artist-carlos.jpg",
+      "imagen": "../public/img/tatuadores/compe.webp",
       "redes": {
         "instagram": "https://instagram.com/black_ink_tattoo",
         "whatsapp": "+5213312345680"
       }
     },
     {
-      "id": "sofia-dotwork",
-      "name": "Sofía",
-      "artistName": "Dot",
+      "id": "EL ALONSO",
+      "name": "ALONSO",
+      "artistName": "EL ALONSO",
       "experienceYears": 6,
       "bio": "Especialista en dotwork y tatuajes de punto fino",
       "estilos": ["dotwork", "minimal", "japones", "geometrico"],
       "ubicacion": "Guadalajara, Jalisco",
-      "imagen": "./public/img/artist-sofia.jpg",
+      "imagen": "../public/img/tatuadores/ELALONSO.jpg",
       "redes": {
         "instagram": "https://instagram.com/dot_tattoo_art",
         "whatsapp": "+5213312345681"

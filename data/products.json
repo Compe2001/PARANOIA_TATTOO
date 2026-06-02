@@ -1,0 +1,17 @@
+{
+  "categories": ["Todos", "Agujas", "Tintas", "Máquinas", "Higiene", "Accesorios"],
+  "products": [
+    {
+      "id": 1,
+      "name": "Agujas Round Liner #12",
+      "category": "Agujas",
+      "price": 5305,
+      "discount": 10,
+      "stock": 200,
+      "image": "../public/img/mummy.webp",
+      "description": "Agujas RL calibre 12, caja de 50 pzas. Acero quirúrgico certificado.",
+      "brand": "Cheyenne"
+    }
+   
+  ]
+}

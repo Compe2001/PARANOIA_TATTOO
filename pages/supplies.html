@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PARANOIA — Supply</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/footer.css">
+   <link rel="stylesheet" href="../css/styles.css">
+      <link rel="stylesheet" href="../css/supply.css">
+  
+</head>
+
+  <header>
+    <nav class="navbar">
+      <img class="logo" src="../public/img/paranoia_logo.webp" alt="Paranoia Logo">
+      <div class="search-bar">
+        <input type="text"id="navSearch" placeholder="Buscar...">
+        <button>🔍</button>
+      </div>
+    
+  </header>
+  <section class="page-hero">
+  <div class="breadcrumb">
+    <a href="../index.html">Inicio</a> › <span>Supply</span>
+  </div>
+  <h1>MATERIAL <span>SUPPLY</span></h1>
+  <p>Agujas, tintas, máquinas e higiene profesional. Todo lo que necesitas para tatuar al nivel más alto.</p>
+</section>
+<body>
+
+<!-- NAVBAR -->
+
+
+<!-- HERO -->
+
+
+<!-- MAIN -->
+<main class="supply-main">
+
+  <!-- CONTROLES / FILTROS -->
+  <div class="controls" id="filterControls">
+    <!-- Generado dinámicamente -->
+  </div>
+
+  <!-- CARRUSEL: DESTACADOS -->
+  <div class="carousel-section" id="carouselSection">
+    <div class="section-label">Destacados <em>& Ofertas</em></div>
+    <div class="carousel-wrapper" id="carouselWrapper">
+      <button class="carousel-arrow prev" id="prevBtn" onclick="shiftCarousel(-1)">‹</button>
+      <div class="carousel-track-outer">
+        <div class="carousel-track" id="carouselTrack"></div>
+      </div>
+      <button class="carousel-arrow next" id="nextBtn" onclick="shiftCarousel(1)">›</button>
+    </div>
+    <div class="carousel-dots" id="carouselDots"></div>
+  </div>
+
+  <!-- GRID: TODOS LOS PRODUCTOS -->
+  <div class="section-label" id="gridLabel">Catálogo <em>Completo</em></div>
+  <div class="products-grid" id="productsGrid">
+    <!-- Skeletons iniciales -->
+    <div class="skeleton"></div>
+    <div class="skeleton"></div>
+    <div class="skeleton"></div>
+    <div class="skeleton"></div>
+  </div>
+
+</main>
+
+<footer>
+  <strong>PARANOIA</strong> Tattoo Studio &nbsp;·&nbsp; Avenida Hidalgo 880, Guadalajara, Jalisco &nbsp;·&nbsp; +52 33 3123 4567
+</footer>
+
+<!-- TOAST -->
+<div class="toast" id="toast">
+  <span class="toast-icon">🛒</span>
+  <span id="toastMsg">Producto agregado al carrito</span>
+</div>
+
+  <script src="../js/search-bar.js"></script>
+    <script src="../js/shop.js"></script>
+</body>
+</html>
