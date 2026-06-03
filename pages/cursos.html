@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PARANOIA — Cursos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/courses.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <a href="../index.html">
+        <img class="logo" src="../public/img/paranoia_logo.webp" alt="Paranoia Logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="./tatuadores.html">Tatuadores</a></li>
+        <li><a href="./supplies.html">Supplies</a></li>
+        <li><a href="./agenda.html">Agendar</a></li>
+        <li><a href="./merch.html">Merch</a></li>
+        <li><a href="./cursos.html" class="active">Cursos</a></li>
+      </ul>
+      <div class="search-bar">
+        <input type="text" id="navSearch" placeholder="Buscar cursos...">
+        <button onclick="renderGrid()">🔍</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="breadcrumb">
+      <a href="../index.html">Inicio</a> › <span>Cursos</span>
+    </div>
+    <h1>CURSOS <span>&amp; TALLERES</span></h1>
+    <p>Aprende tatuaje con los mejores artistas de Guadalajara. Formación práctica, técnica real, cupos limitados.</p>
+  </section>
+
+  <!-- MAIN -->
+  <main class="courses-main">
+
+    <!-- CONTROLES / FILTROS -->
+    <div class="controls" id="filterControls">
+      <!-- Generado dinámicamente -->
+    </div>
+
+    <!-- GRID DE CURSOS -->
+    <div class="section-label">Próximos <em>Cursos</em></div>
+    <div class="courses-grid" id="coursesGrid">
+      <!-- Skeletons iniciales -->
+      <div class="skeleton"></div>
+      <div class="skeleton"></div>
+      <div class="skeleton"></div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <strong>PARANOIA</strong> Tattoo Studio &nbsp;·&nbsp; Avenida Hidalgo 880, Guadalajara, Jalisco &nbsp;·&nbsp; +52 33 3123 4567
+  </footer>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast">
+    <span class="toast-icon" id="toastIcon">✅</span>
+    <span id="toastMsg">Acción completada</span>
+  </div>
+
+  <script src="../js/search-bar.js"></script>
+  <script src="../js/courses.js"></script>
+
+</body>
+</html>

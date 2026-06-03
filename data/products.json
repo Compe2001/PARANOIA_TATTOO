@@ -3,13 +3,13 @@
   "products": [
     {
       "id": 1,
-      "name": "Agujas Round Liner #12",
-      "category": "Agujas",
+      "name": "Maquina soldier",
+      "category": "Maquinas",
       "price": 5305,
       "discount": 10,
       "stock": 200,
       "image": "../public/img/mummy.webp",
-      "description": "Agujas RL calibre 12, caja de 50 pzas. Acero quirúrgico certificado.",
+      "description": "Maquina de tatuar profesional, incluye agujas y tintas.",
       "brand": "Cheyenne"
     }
    

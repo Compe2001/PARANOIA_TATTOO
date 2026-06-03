@@ -7,7 +7,17 @@
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/artist.css">
   <link rel="stylesheet" href="./css/testimonios.css">
-    <link rel="stylesheet" href="./css/footer.CSS">
+  <link rel="stylesheet" href="./css/footer.CSS">
+  <style>
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+      display: contents;
+    }
+    .card-link .card {
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
   <div id="preloader">
@@ -47,42 +57,53 @@
   </section>
 
   <main class="gallery">
-    <div class="card" id="tatuadores">
-      <img src="./public/img/tatuaje_cabeza_detras.webp" alt="Galería de tatuadores">
-      <h3>TATUADORES</h3>
-      <p>Conoce a los artistas y sus estilos.</p>
-    </div>
+    <a href="./pages/tatuadores.html" class="card-link">
+      <div class="card" id="tatuadores">
+        <img src="./public/img/tatuaje_cabeza_detras.webp" alt="Galería de tatuadores">
+        <h3>TATUADORES</h3>
+        <p>Conoce a los artistas y sus estilos.</p>
+      </div>
+    </a>
 
-    <div class="card" id="merch">
-      <img src="./public/img/perfo.webp" alt="Merch y arte">
-      <h3>PERFORACIONES</h3>
-      <p>Ropa, cuadros y arte exclusivo.</p>
-    </div>
+    <a href="./pages/perforaciones.html" class="card-link">
+      <div class="card" id="perforaciones">
+        <img src="./public/img/perfo.webp" alt="Merch y arte">
+        <h3>PERFORACIONES</h3>
+        <p>Ropa, cuadros y arte exclusivo.</p>
+      </div>
+    </a>
 
+    <a href="./pages/supplies.html" class="card-link">
+      <div class="card" id="supplies">
+        <img src="./public/img/POWERINKED.webp" alt="Productos tipo supply">
+        <h3>SUPPLY</h3>
+        <p>Agujas, tintas y equipo profesional.</p>
+      </div>
+    </a>
 
-    <div class="card" id="supplies">
-      <img src="./public/img/POWERINKED.webp" alt="Productos tipo supply">
-      <h3>SUPPLY</h3>
-      <p>Agujas, tintas y equipo profesional.</p>
-    </div>
+    <a href="./pages/agenda.html" class="card-link">
+      <div class="card" id="citas">
+        <img src="./public/img/triada_tatuajes.webp" alt="Agendar citas">
+        <h3>AGENDA</h3>
+        <p>Reserva tu sesión fácilmente en línea.</p>
+      </div>
+    </a>
 
-    <div class="card" id="citas">
-      <img src="./public/img/triada_tatuajes.webp" alt="Agendar citas">
-      <h3>AGENDA</h3>
-      <p>Reserva tu sesión fácilmente en línea.</p>
-    </div>
+    <a href="./pages/galeria.html" class="card-link">
+      <div class="card" id="galeria">
+        <img src="./public/img/galeria.jpg" alt="Merch y arte">
+        <h3>GALERIA</h3>
+        <p>Ropa, cuadros y arte exclusivo.</p>
+      </div>
+    </a>
 
-    <div class="card" id="merch">
-      <img src="./public/img/galeria.jpg" alt="Merch y arte">
-      <h3>GALERIA</h3>
-      <p>Ropa, cuadros y arte exclusivo.</p>
-    </div>
-
-      <div class="card" id="merch">
-      <img src="./public/img/CURSOS.jpg" alt="Merch y arte">
-      <h3>CURSOS</h3>
-      <p>Ropa, cuadros y arte exclusivo.</p>
-    </div>
+    <a href="./pages/cursos.html" class="card-link">
+      <div class="card" id="cursos">
+        <img src="./public/img/CURSOS.jpg" alt="Merch y arte">
+        <h3>CURSOS</h3>
+        <p>Ropa, cuadros y arte exclusivo.</p>
+      </div>
+    </a>
 <section class="testimonials">
   <h2>Lo que dicen nuestros clientes</h2>
   <div class="testimonials-container">

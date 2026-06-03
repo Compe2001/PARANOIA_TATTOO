@@ -1,0 +1,30 @@
+{
+  "categories": ["Todos", "Principiante", "Intermedio", "Avanzado", "Workshop"],
+  "courses": [
+    {
+      "id": 1,
+      "title": "Fundamentos del Tatuaje",
+      "subtitle": "Teoría y práctica base",
+      "category": "Principiante",
+      "instructor": "Carlos 'Ink' Herrera",
+      "duration": "4 semanas",
+      "schedule": "Sábados 10:00 – 14:00",
+      "price": 3500,
+      "cupos_total": 8,
+      "cupos_disponibles": 3,
+      "level": "Principiante",
+      "description": "Aprende los fundamentos del tatuaje: seguridad e higiene, manejo de máquina, técnicas de línea y sombreado básico. Incluye kit de práctica.",
+      "includes": ["Kit de agujas y tintas", "Material de higiene", "Certificado de finalización", "Acceso a grupo privado"],
+      "images": [
+        "../public/img/tatuaje_respeto_pierna.webp",
+        "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=600&q=81",
+        "https://images.unsplash.com/photo-1611078489935-0cb964de46d6?w=600&q=80",
+        "https://images.unsplash.com/photo-1567459169668-6e4673db6c3a?w=600&q=80",
+        "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80"
+      ],
+      "fecha_inicio": "2026-07-05",
+      "badge": "NUEVO"
+    }
+
+  ]
+}

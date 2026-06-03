@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PARANOIA — [NOMBRE ARTISTA]</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/artist-profile.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════════ -->
+  <header>
+    <nav class="navbar">
+      <a href="../index.html">
+        <img class="logo" src="../public/img/paranoia_logo.webp" alt="Paranoia Logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="./tatuadores.html" class="active">Tatuadores</a></li>
+        <li><a href="./supplies.html">Supplies</a></li>
+        <li><a href="./agenda.html">Agendar</a></li>
+        <li><a href="./merch.html">Merch</a></li>
+        <li><a href="./cursos.html">Cursos</a></li>
+      </ul>
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar...">
+        <button>🔍</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ══════════════════════════════════════════════
+       HERO — PORTADA DEL ARTISTA
+  ══════════════════════════════════════════════ -->
+  <section class="artist-hero">
+
+    <!-- Imagen de fondo (foto del tatuador o su trabajo más icónico) -->
+    <div class="hero-bg">
+      <img src="../public/img/artistas/[ARTISTA]-hero.webp"
+           alt="[NOMBRE ARTISTA]"
+           onerror="this.parentElement.style.background='linear-gradient(135deg,#111 0%,#000 100%)'">
+      <div class="hero-bg-overlay"></div>
+    </div>
+
+    <!-- Contenido del hero -->
+    <div class="hero-content">
+      <div class="breadcrumb">
+        <a href="../index.html">Inicio</a> ›
+        <a href="./tatuadores.html">Tatuadores</a> ›
+        <span>[NOMBRE ARTISTA]</span>
+      </div>
+
+      <!-- Avatar + nombre -->
+      <div class="artist-identity">
+        <div class="artist-avatar-wrap">
+          <img class="artist-avatar"
+               src="../public/img/artistas/[ARTISTA]-avatar.webp"
+               alt="[NOMBRE ARTISTA]"
+               onerror="this.src='https://placehold.co/120x120/161616/ffe033?text=P'">
+          <span class="available-dot" title="Disponible para citas"></span>
+        </div>
+        <div class="artist-title">
+          <p class="artist-studio-tag">Paranoia Tattoo Studio</p>
+          <h1 class="artist-name">[NOMBRE<br><span>[APELLIDO / ALIAS]</span>]</h1>
+          <div class="artist-tagline">[Eslogan o frase del artista]</div>
+        </div>
+      </div>
+
+      <!-- Stats rápidos -->
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">[X]+</span>
+          <span class="stat-label">Años de experiencia</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">[X]k+</span>
+          <span class="stat-label">Tatuajes realizados</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">[X]</span>
+          <span class="stat-label">Estilos dominados</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">[X]k</span>
+          <span class="stat-label">Seguidores</span>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="hero-ctas">
+        <a href="./agenda.html?artista=[ARTISTA-ID]" class="btn-primary">Agendar cita</a>
+        <div class="social-row">
+          <a href="https://instagram.com/[HANDLE]" target="_blank" class="social-btn" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://tiktok.com/@[HANDLE]" target="_blank" class="social-btn" aria-label="TikTok">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Indicador de scroll -->
+    <div class="scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       MAIN
+  ══════════════════════════════════════════════ -->
+  <main class="artist-main">
+
+    <!-- ────────────────────────────────────────────
+         SECCIÓN 1: SOBRE EL ARTISTA + VISIÓN
+    ──────────────────────────────────────────── -->
+    <section class="section-bio reveal">
+      <div class="section-inner split-layout">
+
+        <div class="bio-text-col">
+          <div class="section-eyebrow">El artista</div>
+          <h2 class="section-heading">Sobre <em>[NOMBRE]</em></h2>
+
+          <p class="bio-lead">
+            [Párrafo de presentación fuerte — quién es, de dónde viene, qué lo define como artista. 2-3 oraciones impactantes.]
+          </p>
+          <p class="bio-body">
+            [Párrafo más extenso sobre su trayectoria, formación, influencias artísticas y lo que lo diferencia del resto. Puedes hablar de su proceso creativo, de cómo trabaja con los clientes, etc.]
+          </p>
+          <p class="bio-body">
+            [Párrafo adicional opcional. Personalidad, filosofía de trabajo, anécdotas relevantes.]
+          </p>
+
+          <!-- Tags de estilos -->
+          <div class="bio-style-tags">
+            <span class="style-tag">[Estilo 1]</span>
+            <span class="style-tag">[Estilo 2]</span>
+            <span class="style-tag">[Estilo 3]</span>
+            <span class="style-tag">[Estilo 4]</span>
+          </div>
+        </div>
+
+        <!-- Foto secundaria del artista -->
+        <div class="bio-img-col">
+          <div class="bio-img-frame">
+            <img src="../public/img/artistas/[ARTISTA]-bio.webp"
+                 alt="[NOMBRE ARTISTA] en el estudio"
+                 onerror="this.src='https://placehold.co/480x580/161616/222?text=ARTISTA'">
+            <div class="bio-img-label">
+              <span class="label-studio">Paranoia Tattoo Studio</span>
+              <span class="label-city">Guadalajara, Jalisco</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ────────────────────────────────────────────
+         SECCIÓN 2: VISIÓN DEL TATUAJE
+    ──────────────────────────────────────────── -->
+    <section class="section-vision reveal">
+      <div class="section-inner">
+
+        <div class="vision-header">
+          <div class="section-eyebrow">Filosofía</div>
+          <h2 class="section-heading">Su visión <em>del tatuaje</em></h2>
+        </div>
+
+        <div class="vision-layout">
+
+          <!-- Quote principal -->
+          <blockquote class="vision-quote">
+            <span class="quote-mark">"</span>
+            [Frase poderosa del artista sobre su visión del tatuaje. Algo que lo defina completamente como creador y como persona. Que suene auténtico.]
+            <cite>— [Nombre del artista]</cite>
+          </blockquote>
+
+          <!-- Pilares de su visión -->
+          <div class="vision-pillars">
+            <div class="pillar">
+              <div class="pillar-icon">✦</div>
+              <h3 class="pillar-title">[Pilar 1: ej. "El diseño primero"]</h3>
+              <p class="pillar-body">[Descripción breve de este aspecto de su filosofía. 2-3 líneas máximo.]</p>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon">✦</div>
+              <h3 class="pillar-title">[Pilar 2: ej. "Arte permanente"]</h3>
+              <p class="pillar-body">[Descripción breve de este aspecto de su filosofía. 2-3 líneas máximo.]</p>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon">✦</div>
+              <h3 class="pillar-title">[Pilar 3: ej. "Conexión con el cliente"]</h3>
+              <p class="pillar-body">[Descripción breve de este aspecto de su filosofía. 2-3 líneas máximo.]</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ────────────────────────────────────────────
+         SECCIÓN 3: ESTILOS
+    ──────────────────────────────────────────── -->
+    <section class="section-styles reveal">
+      <div class="section-inner">
+        <div class="section-eyebrow">Especialidades</div>
+        <h2 class="section-heading">Estilos que <em>domina</em></h2>
+
+        <div class="styles-grid">
+
+          <!-- Repite este bloque por cada estilo -->
+          <div class="style-card">
+            <div class="style-img-wrap">
+              <img src="../public/img/artistas/[ARTISTA]-estilo1.webp"
+                   alt="[Nombre estilo 1]"
+                   onerror="this.src='https://placehold.co/400x300/161616/222?text=[ESTILO]'">
+              <div class="style-overlay">
+                <span class="style-overlay-name">[Estilo 1]</span>
+              </div>
+            </div>
+            <div class="style-info">
+              <h3 class="style-name">[Nombre Estilo 1]</h3>
+              <p class="style-desc">[Descripción del estilo y cómo lo trabaja este artista en particular. 1-2 oraciones.]</p>
+              <div class="style-mastery">
+                <span class="mastery-label">Dominio</span>
+                <div class="mastery-bar"><div class="mastery-fill" style="width:[95]%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="style-card">
+            <div class="style-img-wrap">
+              <img src="../public/img/artistas/[ARTISTA]-estilo2.webp"
+                   alt="[Nombre estilo 2]"
+                   onerror="this.src='https://placehold.co/400x300/161616/222?text=[ESTILO]'">
+              <div class="style-overlay">
+                <span class="style-overlay-name">[Estilo 2]</span>
+              </div>
+            </div>
+            <div class="style-info">
+              <h3 class="style-name">[Nombre Estilo 2]</h3>
+              <p class="style-desc">[Descripción del estilo y cómo lo trabaja este artista. 1-2 oraciones.]</p>
+              <div class="style-mastery">
+                <span class="mastery-label">Dominio</span>
+                <div class="mastery-bar"><div class="mastery-fill" style="width:[85]%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="style-card">
+            <div class="style-img-wrap">
+              <img src="../public/img/artistas/[ARTISTA]-estilo3.webp"
+                   alt="[Nombre estilo 3]"
+                   onerror="this.src='https://placehold.co/400x300/161616/222?text=[ESTILO]'">
+              <div class="style-overlay">
+                <span class="style-overlay-name">[Estilo 3]</span>
+              </div>
+            </div>
+            <div class="style-info">
+              <h3 class="style-name">[Nombre Estilo 3]</h3>
+              <p class="style-desc">[Descripción del estilo y cómo lo trabaja este artista. 1-2 oraciones.]</p>
+              <div class="style-mastery">
+                <span class="mastery-label">Dominio</span>
+                <div class="mastery-bar"><div class="mastery-fill" style="width:[80]%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Añade más .style-card según los estilos del artista -->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ────────────────────────────────────────────
+         SECCIÓN 4: RECORRIDO / TIMELINE
+    ──────────────────────────────────────────── -->
+    <section class="section-timeline reveal">
+      <div class="section-inner">
+        <div class="section-eyebrow">Trayectoria</div>
+        <h2 class="section-heading">El <em>recorrido</em></h2>
+
+        <div class="timeline">
+
+          <!-- Repite .timeline-item por cada hito -->
+          <div class="timeline-item">
+            <div class="timeline-year">[AÑO]</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">[Hito: ej. "Primeros pasos"]</h3>
+              <p class="timeline-body">[Descripción del hito. ¿Qué pasó en ese momento de su vida o carrera? ¿Qué aprendió? ¿Dónde estaba?]</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year">[AÑO]</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">[Hito: ej. "Primer estudio profesional"]</h3>
+              <p class="timeline-body">[Descripción del hito.]</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year">[AÑO]</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">[Hito: ej. "Convención internacional"]</h3>
+              <p class="timeline-body">[Descripción del hito.]</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year">[AÑO]</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">[Hito: ej. "Llega a Paranoia"]</h3>
+              <p class="timeline-body">[Descripción del hito.]</p>
+            </div>
+          </div>
+
+          <!-- Último hito: el presente -->
+          <div class="timeline-item timeline-item--present">
+            <div class="timeline-year now">HOY</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">[Estado actual]</h3>
+              <p class="timeline-body">[Dónde está ahora, en qué proyectos trabaja, qué viene próximamente.]</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ────────────────────────────────────────────
+         SECCIÓN 5: GALERÍA DE TRABAJOS
+    ──────────────────────────────────────────── -->
+    <section class="section-gallery reveal">
+      <div class="section-inner">
+        <div class="gallery-header">
+          <div>
+            <div class="section-eyebrow">Portfolio</div>
+            <h2 class="section-heading">Trabajos <em>seleccionados</em></h2>
+          </div>
+          <div class="gallery-filter-row" id="galleryFilters">
+            <!-- Generado por JS según estilos del artista -->
+          </div>
+        </div>
+
+        <div class="gallery-masonry" id="galleryGrid">
+          <!--
+            Repite este bloque para cada foto del portfolio.
+            Alterna .size-tall y .size-wide para el efecto masonry.
+            Si no usas JS dinámico, escríbelos directamente aquí.
+          -->
+
+          <div class="gallery-item" data-style="[estilo1]">
+            <img src="../public/img/artistas/[ARTISTA]-work-01.webp"
+                 alt="Trabajo de [NOMBRE ARTISTA]"
+                 onerror="this.src='https://placehold.co/400x500/111/222?text=WORK'">
+            <div class="gallery-overlay">
+              <span class="gal-style">[Estilo]</span>
+            </div>
+          </div>
+
+          <div class="gallery-item size-tall" data-style="[estilo2]">
+            <img src="../public/img/artistas/[ARTISTA]-work-02.webp"
+                 alt="Trabajo de [NOMBRE ARTISTA]"
+                 onerror="this.src='https://placehold.co/400x700/111/222?text=WORK'">
+            <div class="gallery-overlay">
+              <span class="gal-style">[Estilo]</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-style="[estilo1]">
+            <img src="../public/img/artistas/[ARTISTA]-work-03.webp"
+                 alt="Trabajo de [NOMBRE ARTISTA]"
+                 onerror="this.src='https://placehold.co/400x500/111/222?text=WORK'">
+            <div class="gallery-overlay">
+              <span class="gal-style">[Estilo]</span>
+            </div>
+          </div>
+
+          <div class="gallery-item size-wide" data-style="[estilo3]">
+            <img src="../public/img/artistas/[ARTISTA]-work-04.webp"
+                 alt="Trabajo de [NOMBRE ARTISTA]"
+                 onerror="this.src='https://placehold.co/800x400/111/222?text=WORK'">
+            <div class="gallery-overlay">
+              <span class="gal-style">[Estilo]</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-style="[estilo2]">
+            <img src="../public/img/artistas/[ARTISTA]-work-05.webp"
+                 alt="Trabajo de [NOMBRE ARTISTA]"
+                 onerror="this.src='https://placehold.co/400x500/111/222?text=WORK'">
+            <div class="gallery-overlay">
+              <span class="gal-style">[Estilo]</span>
+            </div>
+          </div>
+
+          <div class="gallery-item size-tall" data-style="[estilo3]">
+            <img src="../public/img/artistas/[ARTISTA]-work-06.webp"
+                 alt="Trabajo de [NOMBRE ARTISTA]"
+                 onerror="this.src='https://placehold.co/400x700/111/222?text=WORK'">
+            <div class="gallery-overlay">
+              <span class="gal-style">[Estilo]</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-style="[estilo1]">
+            <img src="../public/img/artistas/[ARTISTA]-work-07.webp"
+                 alt="Trabajo de [NOMBRE ARTISTA]"
+                 onerror="this.src='https://placehold.co/400x500/111/222?text=WORK'">
+            <div class="gallery-overlay">
+              <span class="gal-style">[Estilo]</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-style="[estilo2]">
+            <img src="../public/img/artistas/[ARTISTA]-work-08.webp"
+                 alt="Trabajo de [NOMBRE ARTISTA]"
+                 onerror="this.src='https://placehold.co/400x500/111/222?text=WORK'">
+            <div class="gallery-overlay">
+              <span class="gal-style">[Estilo]</span>
+            </div>
+          </div>
+
+          <!-- Añade más .gallery-item según el portfolio -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ────────────────────────────────────────────
+         SECCIÓN 6: CTA FINAL — AGENDAR
+    ──────────────────────────────────────────── -->
+    <section class="section-cta reveal">
+      <div class="cta-inner">
+        <div class="cta-glow"></div>
+        <p class="cta-eyebrow">¿Listo para tu próximo tatuaje?</p>
+        <h2 class="cta-heading">Trabaja con <span>[NOMBRE]</span></h2>
+        <p class="cta-body">Cupos limitados cada mes. Agenda tu consulta gratuita y platica directamente con el artista sobre tu idea.</p>
+        <a href="./agenda.html?artista=[ARTISTA-ID]" class="btn-primary btn-large">Agendar mi cita</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════════
+       LIGHTBOX
+  ══════════════════════════════════════════════ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+    <button class="lb-close" id="lbClose" aria-label="Cerrar">✕</button>
+    <button class="lb-arrow lb-prev" id="lbPrev" aria-label="Anterior">‹</button>
+    <div class="lb-img-wrap">
+      <img id="lbImg" src="" alt="">
+      <div class="lb-caption" id="lbCaption"></div>
+    </div>
+    <button class="lb-arrow lb-next" id="lbNext" aria-label="Siguiente">›</button>
+  </div>
+  <div class="lightbox-bg" id="lightboxBg"></div>
+
+  <!-- ══════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2026 Paranoia Tattoo Studio</p>
+      <p>📍 Avenida Hidalgo 880, Zona Centro, Guadalajara, Jalisco</p>
+      <p>Tel: <a href="tel:+523331234567">+52 33 3123 4567</a></p>
+      <div class="social-icons">
+        <a href="#"><img src="../public/icons/instagram.svg" alt="Instagram"></a>
+        <a href="#"><img src="../public/icons/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="../public/icons/tiktok.svg" alt="TikTok"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/artist-profile.js"></script>
+</body>
+</html>

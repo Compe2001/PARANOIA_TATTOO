@@ -55,34 +55,7 @@
         "instagram": "https://instagram.com/dot_tattoo_art",
         "whatsapp": "+5213312345681"
       }
-    },
-    {
-      "id": "diego-color",
-      "name": "Diego",
-      "artistName": "ColorMaster",
-      "experienceYears": 9,
-      "bio": "Especialista en tatuajes a color con gradientes y realismo",
-      "estilos": ["color", "realismo", "portrait", "new school"],
-      "ubicacion": "Guadalajara, Jalisco",
-      "imagen": "./public/img/artist-diego.jpg",
-      "redes": {
-        "instagram": "https://instagram.com/colormaster_tattoo",
-        "whatsapp": "+5213312345682"
-      }
-    },
-    {
-      "id": "alejandra-japanese",
-      "name": "Alejandra",
-      "artistName": "Samurai",
-      "experienceYears": 11,
-      "bio": "Maestra en tatuajes japoneses tradicionales e irezumi",
-      "estilos": ["japones", "tradicional", "irezumi", "sleeve"],
-      "ubicacion": "Guadalajara, Jalisco",
-      "imagen": "./public/img/artist-alejandra.jpg",
-      "redes": {
-        "instagram": "https://instagram.com/samurai_tattoo_mx",
-        "whatsapp": "+5213312345683"
-      }
     }
+  
   ]
 }
