@@ -1,24 +1,25 @@
 .testimonials {
   background-color: #111;
-  padding: 50px 20px;
-  text-align: center;
+  align-self: center;
+
 }
 
 .testimonials h2 {
   color: #e63946;
   font-family: 'Staatliches', cursive;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 .testimonials-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 800px;
 }
 
 .testimonial {
   background-color: #1a1a1a;
   color: #eee;
+    display: flex;
   border: 1px solid #333;
   border-radius: 8px;
   padding: 20px;
@@ -40,12 +41,12 @@
 /* 📱 Responsive */
 @media (max-width: 1024px) {
   .testimonials-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(6, 6px);
   }
 }
 
 @media (max-width: 600px) {
   .testimonials-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 6fr;
   }
 }

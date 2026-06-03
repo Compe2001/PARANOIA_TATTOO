@@ -8,16 +8,8 @@
   <link rel="stylesheet" href="./css/artist.css">
   <link rel="stylesheet" href="./css/testimonios.css">
   <link rel="stylesheet" href="./css/footer.CSS">
-  <style>
-    .card-link {
-      text-decoration: none;
-      color: inherit;
-      display: contents;
-    }
-    .card-link .card {
-      cursor: pointer;
-    }
-  </style>
+    <link rel="stylesheet" href="./css/map.css">
+ 
 </head>
 <body>
   <div id="preloader">
@@ -67,7 +59,7 @@
 
     <a href="./pages/perforaciones.html" class="card-link">
       <div class="card" id="perforaciones">
-        <img src="./public/img/perfo.webp" alt="Merch y arte">
+        <img src="./public/img/perfos/piercing_cara.webp" alt="Merch y arte">
         <h3>PERFORACIONES</h3>
         <p>Ropa, cuadros y arte exclusivo.</p>
       </div>
@@ -104,20 +96,44 @@
         <p>Ropa, cuadros y arte exclusivo.</p>
       </div>
     </a>
-<section class="testimonials">
-  <h2>Lo que dicen nuestros clientes</h2>
-  <div class="testimonials-container">
-    <div class="testimonial">
-      <p>"El mejor estudio de tatuajes en Guadalajara, atención increíble."</p>
-      <span>- Ana G.</span>
+  </main>
+
+  <section class="map-section">
+  <div class="map-container">
+    <div class="map-info">
+      <h3>📍 Estudio Central</h3>
+      <div class="address-block">
+        <div class="address-line">
+          <span>🏠</span> <span><strong>Av. Hidalgo 880</strong></span>
+        </div>
+        <div class="address-line">
+          <span>📍</span> <span>Centro Histórico, 44100</span>
+        </div>
+        <div class="address-line">
+          <span>🌆</span> <span>Guadalajara, Jalisco</span>
+        </div>
+      </div>
+      <div class="detail-text">
+        ⚡ Ven a descubrir el verdadero arte sobre piel. Estamos en el corazón de Guadalajara, 
+        a pocos pasos de la Catedral y el Mercado Libertad. Ambiente único, profesionales 
+        certificados y pasión por el tatuaje.
+      </div>
+      <a href="https://www.google.com/maps/dir//Av.+Hidalgo+880,+Zona+Centro,+44100+Guadalajara,+Jal./" 
+         target="_blank" class="btn-maps">
+        🗺️ Cómo llegar → Google Maps
+      </a>
     </div>
-    <div class="testimonial">
-      <p>"Profesionales y creativos, mi tatuaje quedó espectacular."</p>
-      <span>- Luis M.</span>
-    </div>
-    <div class="testimonial">
-      <p>"Ambiente seguro y artistas con mucho talento."</p>
-      <span>- Sofía R.</span>
+    <div class="map-embed">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.546977205963!2d-103.35180092460855!3d20.676219904262463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b244a77411f5%3A0xb3d3d7ceeae5af0!2sAv.%20Hidalgo%20880%2C%20Zona%20Centro%2C%2044100%20Guadalajara%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1712345678901!5m2!1ses-419!2smx" 
+        width="600" 
+        height="380" 
+        style="border:0; width:100%; height:100%; min-height: 320px;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Mapa Google Maps - Av Hidalgo 880, Guadalajara Centro">
+      </iframe>
     </div>
   </div>
 </section>
@@ -125,8 +141,9 @@
 
 
 
+
    
-</main>
+
 <footer class="footer">
   <div class="footer-content">
     <p>&copy; 2026 Paranoia Tattoo Studio</p>
@@ -142,5 +159,6 @@
 
   <script src="./js/preloader.js"></script>
   <script src="./js/search-bar.js"></script>
+    <script src="./js/maps.js"></script>
 </body>
 </html>

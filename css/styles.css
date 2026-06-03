@@ -123,6 +123,14 @@ body {
   box-shadow: 0 4px 8px rgba(0,0,0,0.5);
   transition: transform 0.3s;
 }
+  .card-link {
+      text-decoration: none;
+      color: inherit;
+      display: contents;
+    }
+    .card-link .card {
+      cursor: pointer;
+    }
 
 .card:hover {
   transform: translateY(-5px);
