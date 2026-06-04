@@ -1,8 +1,6 @@
-/* script.js
-   Búsqueda por palabras clave con sugerencias y redirección.
+/*  Búsqueda por palabras clave con sugerencias y redirección.
    - Coloca search-data.json en la misma carpeta o activa EMBED_DATA.
-   - Ajusta routes para apuntar a tus páginas reales.
-*/
+   - Ajusta routes para apuntar a tus páginas reales. */
 
 (() => {
   // ---------- CONFIG ----------
