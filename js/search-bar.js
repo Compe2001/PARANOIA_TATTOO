@@ -7,7 +7,7 @@
 (() => {
   // ---------- CONFIG ----------
   const EMBED_DATA = false; // true para usar EMBED_SEARCH_DATA en vez de fetch
-  const DATA_URL = './search-data.json'; // ruta al JSON
+  const DATA_URL = './data/searchbar-data.json'; // ruta al JSON
   const MIN_CHARS = 1; // empezar a sugerir
   const MAX_SUGGESTIONS = 6;
   const FUZZY_THRESHOLD = 0.45; // 0..1 (menor = más estricto)
@@ -17,18 +17,13 @@
     "tatuadores": "tatuadores.html",
     "merch": "merch.html",
     "supply": "supply.html",
-    "agenda": "citas.html"
+    "agenda": "citas.html",
+    "artists": "artists.html",
+    "cursos": "cursos.html"
   };
 
   // ---------- EMBED DATA (opcional) ----------
-  const EMBED_SEARCH_DATA = {
-    "entries": [
-      { "category": "tatuadores", "keywords": ["tatuadores","tatuador","artista","tattoo","tattoos","piercing","estudio","realismo","tradicional","neo tradicional","blackwork","linework","dotwork","japanese","portrait","geométrico","minimal","galería"] },
-      { "category": "merch", "keywords": ["merch","merchandising","ropa","camiseta","playera","hoodie","stickers","prints","láminas","posters","taza","bolsa","parches","pins"] },
-      { "category": "supply", "keywords": ["supply","supplies","materiales","aguja","agujas","tinta","tintas","ink","fuente","maquina","grips","cartuchos","aftercare","esteril","guantes"] },
-      { "category": "agenda", "keywords": ["agenda","citas","agendar","reservar","book","booking","turno","horario","disponibilidad","reservar cita","agendar cita","calendar","schedule","appointment"] }
-    ]
-  };
+
 
   // ---------- UTILIDADES ----------
   const normalize = s => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
@@ -96,7 +91,7 @@
     }
     return fetch(DATA_URL, {cache: "no-cache"})
       .then(r => {
-        if (!r.ok) throw new Error('No se pudo cargar search-data.json');
+        if (!r.ok) throw new Error('No se pudo cargar searchbar-data.json');
         return r.json();
       })
       .then(json => {

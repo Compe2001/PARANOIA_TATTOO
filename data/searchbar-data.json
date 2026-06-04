@@ -1,8 +1,10 @@
 {
   "entries": [
-    { "category": "tatuadores", "keywords": ["tatuadores","tatuador","artista","tattoo","tattoos","piercing","estudio","estilista","realismo","tradicional","neo tradicional","blackwork","linework","dotwork","japanese","japonés","old school","new school","portrait","retrato","geométrico","minimal","minimalista","color","colores","sleeve","manga","cover up","coverup","remodelación","artist profiles","portfolio","galería","tat 1","tat 2"] },
-    { "category": "merch", "keywords": ["merch","merchandising","ropa","camiseta","playera","hoodie","sudadera","gorra","gorras","stickers","pegatinas","prints","láminas","posters","arte","colección","limited","edición limitada","taza","mug","bolsa","totebag","parches","pins","pin","collares","accesorios","merchand"] },
-    { "category": "supply", "keywords": ["supply","supplies","material","materiales","aguja","agujas","tinta","tintas","ink","power supply","fuente","maquina","máquina","maquina rotativa","maquina coil","clip cord","grips","carts","cartuchos","cartucho","vaselina","aftercare","cuidado","equipamiento","equipos","pedal","foot pedal","steril","esteril","autoclave","guantes","nitrilo","needle","needle cartridge","supply shop","shop supplies"] },
-    { "category": "agenda", "keywords": ["agenda","citas","agendar","reservar","reservación","reservaciones","book","booking","turno","turnos","horario","disponibilidad","reservar cita","agendar cita","reservar sesión","calendar","calendario","schedule","reservas","agenda de citas","bookings","appointment","appointments","reservar hora","hora disponible","contacto citas"] }
+      { "category": "tatuadores", "keywords": ["tatuadores","tatuador","artista","tattoo","tattoos","piercing","estudio","realismo","tradicional","neo tradicional","blackwork","linework","dotwork","japanese","portrait","geométrico","minimal","galería"] },
+      { "category": "merch", "keywords": ["merch","merchandising","ropa","camiseta","playera","hoodie","stickers","prints","láminas","posters","taza","bolsa","parches","pins"] },
+      { "category": "supply", "keywords": ["supply","supplies","materiales","aguja","agujas","tinta","tintas","ink","fuente","maquina","grips","cartuchos","aftercare","esteril","guantes"] },
+      { "category": "agenda", "keywords": ["agenda","citas","agendar","reservar","book","booking","turno","horario","disponibilidad","reservar cita","agendar cita","calendar","schedule","appointment"] },
+      { "category": "artists", "keywords": ["artistas","artista","tattoo","tattoos","piercing","estudio","realismo","tradicional","neo tradicional","blackwork","linework","dotwork","japanese","portrait","geométrico","minimal","galería"] },
+      { "category": "cursos", "keywords": ["cursos","curso","clase","clases","taller","workshop","aprendizaje","educación","formación","tatuaje","tattoo"] }
   ]
 }

@@ -1,7 +1,4 @@
-javascript
-// ══════════════════════════════════════════════════════════════
-//  PARANOIA — Artist Profile JS
-// ══════════════════════════════════════════════════════════════
+
 
 document.addEventListener('DOMContentLoaded', () => {
 

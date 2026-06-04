@@ -80,7 +80,7 @@ function renderArtists(artists) {
   });
 }
 
-// Filtrar artistas
+// FILTRO DE ARTISTAS A LA VERGA POR QUE HAY UNOS QUE SON MÁS VERGAS QUE OTROS ASI NOMAS ¿COMO LA VE?
 function filterArtists() {
   const styleFilter = document.getElementById('style-filter').value.toLowerCase();
   const experienceFilter = document.getElementById('experience-filter').value;
