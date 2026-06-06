@@ -109,10 +109,9 @@ function filterArtists() {
 }
 
 // Navegar al perfil del artista
+// DESPUÉS
 function goToProfile(artistId) {
-  // Redirigir a la página de perfil del artista
-  // Ejemplo: /pages/artist-profile.html?id=oscar-spiker
-  window.location.href = `./artist-profile.html?id=${artistId}`;
+  window.location.href = `./profile_pages/${artistId}.html`;
 }
 
 // Contactar al artista

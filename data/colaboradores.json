@@ -1,7 +1,7 @@
 {
   "artistas": [
     {
-      "id": "oscar-spiker",
+      "id": "spiker",
       "name": "Oscar",
       "artistName": "Spiker",
       "experienceYears": 10,
@@ -15,7 +15,7 @@
       }
     },
     {
-      "id": "Chino",
+      "id": "perckateck",
       "name": "El Chino",
       "artistName": "PARCKETECK",
       "experienceYears": 8,
@@ -29,8 +29,8 @@
       }
     },
     {
-      "id": "Comper",
-      "name": "Casiel",
+      "id": "compe",
+      "name": "casiel",
       "artistName": "Compendium",
       "experienceYears": 5,
       "bio": "Maestro en linework y blackwork minimalista",
@@ -43,14 +43,28 @@
       }
     },
     {
-      "id": "EL ALONSO",
-      "name": "ALONSO",
-      "artistName": "EL ALONSO",
+      "id": "alonso",
+      "name": "Alonso",
+      "artistName": "RALONSOSALAZAR",
       "experienceYears": 6,
       "bio": "Especialista en dotwork y tatuajes de punto fino",
       "estilos": ["dotwork", "minimal", "japones", "geometrico"],
       "ubicacion": "Guadalajara, Jalisco",
       "imagen": "../public/img/tatuadores/ELALONSO.jpg",
+      "redes": {
+        "instagram": "https://instagram.com/dot_tattoo_art",
+        "whatsapp": "+5213312345681"
+      }
+    },
+        {
+      "id": "ostum",
+      "name": "Yael",
+      "artistName": "Ostum",
+      "experienceYears": 2,
+      "bio": "Especialista en dotwork y tatuajes de punto fino",
+      "estilos": ["dotwork", "minimal", "japones", "geometrico"],
+      "ubicacion": "Guadalajara, Jalisco",
+      "imagen": "../public/img/tatuadores/yael.png",
       "redes": {
         "instagram": "https://instagram.com/dot_tattoo_art",
         "whatsapp": "+5213312345681"
